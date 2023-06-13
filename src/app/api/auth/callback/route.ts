@@ -9,6 +9,8 @@ export async function GET(request: NextRequest) {
     code,
   })
 
+  console.error(registerResponse.request)
+
   const { token } = registerResponse.data
 
   const redirectUrl = new URL('/', request.url)
