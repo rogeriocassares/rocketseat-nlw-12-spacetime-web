@@ -22,6 +22,7 @@ export function MediaPicker() {
     <>
       <input
         onChange={onFileSelected}
+        name="coverUrl"
         type="file"
         id="media"
         accept="image/*"
